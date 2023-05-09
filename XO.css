@@ -1,0 +1,170 @@
+/* box-sizing: border-box;
+  by default if you set a height and width, then add padding and border size,
+  it will be added to the width
+  but if you want to set a total width and height that includes the borders you add,
+  you should use box-sizing: border-box; */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.background{
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(-45deg,#ee7752,#e73c7e,#c53c71,#23a6d5,#23d5ab);
+  background-size: 400% 400%;
+  position: relative;
+  animation: change 8s ease-in-out infinite;
+}
+@keyframes change {
+  0%{
+    background-position: 0 50%;
+  }
+  50%{
+    background-position: 100% 50%;
+  }
+  100%{
+    background-position: 0 50%;
+  }
+}
+.background{  
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#container{
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  visibility: hidden;
+}
+.row{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.dbox{
+  height: 100px;
+  width: 100px;
+  background-color: rgba(199, 195, 195, 0.6);
+  border: none;
+  border-radius: 10px;
+  margin: 1px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 50px;
+  color: white;
+}
+.dbox:hover{
+  cursor: pointer;
+  opacity: 0.85;
+}
+.dbox:active{
+  opacity: 0.8;
+}
+
+#userNames{
+  position: absolute;
+  top: 110px;
+  background-color: #3c8d6b;
+  display: flex;
+  align-items: center;
+  padding-top: 57px;
+  flex-direction: column;
+  width: 355px;
+  height: 250px;
+  border-radius: 50px;
+  visibility: visible;
+}
+.player1{
+  font-size: 25px;
+  color: #ffffff;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.player2{
+  font-size: 25px;
+  color: #ffffff;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-top: 10px;
+}
+.playerInput{
+  width: 170px;
+  border: none;
+  height: 33px;
+  border-radius: 20px;
+  font-size: 18px;
+  padding-left: 12px;
+}
+#startButton{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100px;
+  height: 50px;
+  /* ابسلوت کردمش چون بعدش که یه متن دیگه میاد میخواستم نره پایین*/
+  position: absolute;
+  bottom: 26px;
+}
+#startButton:hover{
+  opacity: 0.8;
+}
+.startImage{
+  width: 110px;
+  height: 50px;
+}
+.startImage:hover{
+  cursor: pointer;
+}
+#winner{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  background-color: rgb(15, 189, 108);
+  width: 500px;
+  height: 200px;
+  font-size: 50px;
+  border-radius: 80px;
+  top: 120px;
+  visibility: hidden;
+}
+#noInput{
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+  font-size: 16px;
+  position: absolute;
+  bottom: 85px;
+}
+#restartButton{
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: Arial, Helvetica, sans-serif;
+  bottom: 60px;
+  width: 190px;
+  height: 60px;
+  border-radius: 30px;
+  border: none;
+  font-size: 36px;
+  background-color: #4dc442;
+  color: white;
+  visibility: hidden;
+}
+#restartImg{
+  bottom: 70px;
+  width: 190px;
+  height: 60px;
+  border-radius: 30px;
+}
+#restartImg:hover{
+  opacity: 0.85;
+  cursor: pointer;
+}
+#restartImg:active{
+  opacity: 0.75;
+}

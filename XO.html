@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>XO Game</title>
+    <link rel="stylesheet" href="XO.css">
+  </head>
+  <body>
+    <div class="background">
+
+      <div id="userNames">
+        <div class="player1">
+          Player 1 (X): <input type="text" class="playerInput" id="player1">
+        </div>
+        <div class="player2">
+          Player 2 (O): <input type="text" class="playerInput" id="player2">
+        </div>
+        <div id="noInput"></div>
+        <button id="startButton">
+          <img class="startImage" src="pictures/start-button.png">
+        </button>
+      </div>
+
+      <div id="container">
+        
+        <div class="row">
+          <div class="dbox" id="box1">
+          </div>
+          <div class="dbox" id="box2">
+          </div>
+          <div class="dbox" id="box3">
+          </div>
+        </div>
+        <div class="row">
+          <div class="dbox" id="box4">
+          </div>
+          <div class="dbox" id="box5">
+          </div>
+          <div class="dbox" id="box6">
+          </div>
+        </div>
+        <div class="row">
+          <div class="dbox" id="box7">
+          </div>
+          <div class="dbox" id="box8">
+          </div>
+          <div class="dbox" id="box9">
+          </div>
+        </div>
+
+      </div>
+
+      <div id="winner"></div>
+
+      <button id="restartButton">
+        <img id="restartImg" src="pictures/restart.jpg" >
+      </button>
+
+    </div>
+
+
+    <script src="XO.js"></script>
+
+  </body>
+</html>
+
+
+
+
+
+
+
+
